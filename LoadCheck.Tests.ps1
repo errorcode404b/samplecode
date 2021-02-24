@@ -4,11 +4,11 @@ $curLo = Split-Path -Parent $MyInvocation.MyCommand.Path
 
 $codeTest = "LoadCheck"
 
-    Describe "$pesTest Pester Tests" {
+    Describe "$codeTest Pester Tests" {
 
     Context 'Path and Code Check'{
         It "$codeTest.ps1 file is in the C:\temp folder" {
-            "$curLo\$pesTest.ps1" | Should Exist
+            "$curLo\$codeTest.ps1" | Should Exist
         }  
 
         It "Checks to see if $codeTest has vaild code"{
