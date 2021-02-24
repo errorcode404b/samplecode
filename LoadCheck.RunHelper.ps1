@@ -1,4 +1,4 @@
-﻿Function Test-LoadCheck{
+Function Test-LoadCheck{
     [CmdletBinding()]
     [Alias()]
     [OutputType([int])]
@@ -25,8 +25,8 @@ Process{
 
     $fDate = Get-Date -Format "MMddyyyy_HHmmss"
     $logFile = "$logLocation\LoadCheckTest$fDate.xml"
-    Write-host -ForegroundColor DarkCyan   "Pester test has started for," -NoNewline; Write-host -ForegroundColor Yellow -BackgroundColor Red "LoadCheck.Test.ps1"
-    Invoke-Pester C:\temp\LoadCheck.Tests.ps1 -OutputFile $logFile 
+    Write-host -ForegroundColor DarkCyan   "Pester test has started for," -NoNewline; Write-host -ForegroundColor Yellow -BackgroundColor Red "LoadCheck.Tests.ps1"
+    Invoke-Pester C:\temp\LoadCheck.Tests.ps1 -OutputFormat NUnitXml -OutputFile  $logFile
     }
 
 End{
