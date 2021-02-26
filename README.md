@@ -1,6 +1,6 @@
 #Description
 
-- LoadCheck.ps1 was used to check host post automated build to ensure all required services were installed. The LoadCheck.ps1 runs using If/Else blocks by checking to see if a given service is installed and if not reports that service as not installed. If the service is intall, reports the status of the service. 
+- LoadCheck.ps1 was used to check host post automated build to ensure all required services were installed. The LoadCheck.ps1 runs using If/Else blocks by checking to see if a given service is installed and if not reports that service as not installed. If the service is installed, reports the status of the service. 
 
 - The LoadCheck.Tests.ps1 provides three basic Pester test plans. 
     - First test, test the path C:\temp where the files should be located. 
