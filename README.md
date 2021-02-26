@@ -26,17 +26,17 @@
 
 - You will need Admin access to a Windows host.
 - You need internet access to download Pester or access to local Nuget repo to load the Pester module.
-- Create the "temp" folder C root
+- Create a folder name "temp" under C:. Exmaple: C:\temp
 - Download the zip from the repo.
-    - Unpack the zip in the C:\temp
-- Run Windows PowerShell ISE for the test scripts.  
+    - Unpack the zip file contents into C:\temp
+- Run Windows PowerShell ISE to run all the ps1 files.  
 
 #Running the code.
 
 - Open Windows PowerShell ISE with admin rights.
 - Open file LoadCheck.RunHelper.ps1
 - Hit the run button or F5 to execute the script
-    - This will execute Invoke-Pester using LoadCheck.Tests.ps1 test plan. The plan running test on LoadCheck.ps1.
-    - Provides the output of the Pester tests. 
+    - This will execute Invoke-Pester using LoadCheck.Tests.ps1 test plan. The test plan runs aganist LoadCheck.ps1.
+    - Once the test in complete, the results file will be opened automately for review 
 - Next open LoadCheck.ps1 and execute to check the image load.
-    - Checks if default services are installed and if installed, the service status.
+    - Checks if the default services are installed and if installed, reports the service status.
