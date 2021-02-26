@@ -24,8 +24,10 @@
 
 #Getting started
 
-- You will need Admin access to Windows host.
-- You need have internet access to download Pester or access to local Nuget repo to load the Pester module.Development environment
+- You will need Admin access to a Windows host.
+- You need internet access to download Pester or access to local Nuget repo to load the Pester module.
+ 
+#Development environment
     
     Windows 10:
         Build 1909
@@ -58,7 +60,8 @@
 - Either download the zip or clone with repo.
     - Unpack the zip in the C:\temp
     - Clone the repo to C:\temp
-- Best to use Windows ISE for the test scripts.  
+    - Place the three files in the temp folder
+- Best to use Windows ISE for the test script.  
 
 #Running the code.
 
